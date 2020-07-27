@@ -7,4 +7,4 @@ Starting below code tutorial :
 
 https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/inform-with-the-paragraph-element
 
-1. Responsive Web Design
+1. Responsive Web Design.
