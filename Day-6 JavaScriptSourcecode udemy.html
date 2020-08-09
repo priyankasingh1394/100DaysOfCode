@@ -1,0 +1,72 @@
+H:\Websites\webjs\index.html Saturday, January 30, 2016 1:05 AM
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Example</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="
+https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity=
+"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin=
+"anonymous">
+</head>
+<body>
+<div id="mydiv1">Hello World</div>
+<div id="mydiv2"></div>
+<input id="myinput1">
+<input id="myinput2">
+<div id="btn1" class="btn btn-primary">Check</div>
+<div id="btn2" class="btn btn-warning">Loop</div>
+<div id="btn3" class="btn btn-default">Button 3</div>
+<script>
+var a = 'this is an a';
+var b = 10;
+var c = 25;
+var mydiv = document.getElementById('mydiv1');
+var mydiv2 = document.getElementById('mydiv2');
+///BUTTONS
+var classname = document.getElementsByClassName("btn");
+for (var i = 0; i < classname.length; i++) {
+classname[i].addEventListener("click", myclickc, false);
+}
+function myclickc() {
+console.log(this.innerHTML);
+mydiv2.innerHTML=this.innerHTML;
+this.setAttribute('style', 'background: #f00; color: #fff;');
+}
+var mybtn2 = document.getElementById('btn2');
+mybtn2.addEventListener("click", myclickb);
+var z = (b == 11) ? 'is a ten' : 'not a ten';
+function myclickb() {
+var x = '';
+for (var a = 1; a < 5; a++) {
+x = x + a + '. hello<br>';
+}
+-1-
+H:\Websites\webjs\index.html Saturday, January 30, 2016 1:05 AM
+mydiv2.innerHTML = x;
+}
+function myclicka() {
+mybtn1.innerHTML = "clicked";
+var d = document.getElementById('myinput1').value;
+var e = document.getElementById('myinput2').value;
+if ((e == d) && 5 == 5) {
+mydiv.innerHTML = e + ' is ' + d;
+} else {
+mydiv.innerHTML = e + ' is NOT equal to ' + d;
+}
+}
+function mycal(a, b) {
+c--;
+var e = b - a * c;
+mydiv.innerHTML = e;
+return e;
+}
+function myclick(e) {
+var d = document.getElementById('myinput1').value;
+mydiv.innerHTML = e;
+}
+</script>
+</body>
+</html>
+-2-
